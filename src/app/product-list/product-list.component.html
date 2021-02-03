@@ -6,9 +6,9 @@ can be found in the LICENSE file at https://angular.io/license
 
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productid">
 	<h3>
-		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+		<a [title]="product.name + ' details'" [routerLink]="['/products', productid]">
 			<img [src]="product.url" [style]="'width:200px'"/>
     {{product.name}}
     </a>
