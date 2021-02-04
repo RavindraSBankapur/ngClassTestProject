@@ -6,5 +6,6 @@
 	<p>Discounted Price: {{product.price | currency:"INR"}}</p>
 
 	<p [style]="'text-decoration: line-through'">Actual Price: {{product.price | double | currency:"INR"}}</p>
+	<p appHighlight> Product Description: {{ product.description }}</p>
 	<button (click)="addToCart(product)">Add To Cart</button>
 </div>
