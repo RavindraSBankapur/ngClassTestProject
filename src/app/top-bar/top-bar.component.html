@@ -1,7 +1,10 @@
 <a [routerLink]="['/']">
 	<h1>My Store</h1>
 </a>
-
+<button (click)="toggleFormat()" [style]="'background-color:red'">Switch Date</button>
+<div [style]="'color:white'">
+	Today's Date : {{ date | date:format() }}
+</div>
 <a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
 
 <!-- 
